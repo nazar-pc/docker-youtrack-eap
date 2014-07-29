@@ -22,7 +22,7 @@ You also need some RAM for youtrack, but I can't really tell how much. Maybe abo
 1. Install docker. [It's not very hard.](http://docs.docker.io/en/latest/installation/)
 2. Run it! (Stop with CTRL-C, repeat at pleasure)
 
-  `docker run -t -i -p 127.0.0.1:8080:8080 dzwicker/docker-youtrack`
+  `docker run -t -i -p 127.0.0.1:8080:8080 nazarpc/docker-youtrack-eap`
 
 
 
@@ -35,7 +35,7 @@ Now open your browser and point it to `http://localhost:8080` and rejoice. :)
 
 2. Create container!
 
-  `docker run -t -i -p 127.0.0.1:8080:8080 -v /var/lib/youtrack:/var/lib/youtrack --name docker-youtrack dzwicker/docker-youtrack`
+  `docker run -t -i -p 127.0.0.1:8080:8080 -v /var/lib/youtrack:/var/lib/youtrack --name docker-youtrack nazarpc/docker-youtrack-eap`
 
 3. Stop it!
 4. Create upstart configuration `/etc/init/docker-youtrack.conf`
