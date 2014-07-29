@@ -4,6 +4,9 @@
 These Dockerfiles allow you to easily build images to deploy your own [youtrack](http://www.jetbrains.com/youtrack/) instance.
 It's free for up to ten users.
 
+# EAP
+This is version forked from dzwicker/docker-youtrack and differs only by using latest EAP version of YouTrack instead of stable version.
+
 ## Disclaimer
 Besides that, as always, use these scripts with care.
 
