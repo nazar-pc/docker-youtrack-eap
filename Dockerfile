@@ -22,11 +22,11 @@ RUN apt-get install -y oracle-java7-installer
  
 
 ######### Install youtrack ###################
-ENV YOUTRACK_VERSION 5.2.2-8792
+ENV YOUTRACK_VERSION eap6.0-10483
 
 RUN mkdir -p /usr/local/youtrack
 RUN mkdir -p /var/lib/youtrack
-RUN wget -nv http://download.jetbrains.com/charisma/youtrack-$YOUTRACK_VERSION.jar -O /usr/local/youtrack/youtrack-$YOUTRACK_VERSION.jar
+RUN wget -nv http://download.jetbrains.com/charisma/EAP/youtrack-$YOUTRACK_VERSION.jar -O /usr/local/youtrack/youtrack-$YOUTRACK_VERSION.jar
 RUN ln -s /usr/local/youtrack/youtrack-$YOUTRACK_VERSION.jar /usr/local/youtrack/youtrack.jar
 
 ADD ./etc /etc
