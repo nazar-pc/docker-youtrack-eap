@@ -14,4 +14,6 @@ exec java \
 	-Djetbrains.youtrack.feature.canvasImageTool=true \
 	-Djetbrains.youtrack.feature.customShortcuts=true \
 	-Djetbrains.youtrack.feature.multipleDrafts=true \
+	-Djetbrains.youtrack.feature.dashboard=true \
+	-Djetbrains.youtrack.feature.regularUiUpdate=true \
 	-jar /usr/local/youtrack/youtrack.jar 8080  2>&1
